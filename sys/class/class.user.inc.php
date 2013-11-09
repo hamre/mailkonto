@@ -12,6 +12,21 @@
  */
 
 class user extends DB_connect {
-
-
+    
+    /*
+     * Check if user is logged in
+     */
+    public function logged_in() {
+	return (isset($_SESSION['user_id'])) ? true : false;
+    }
+    
+    /*
+     * Protects pages that only logged in user can access
+     */
+    public function protect_page() {
+	if($this->logged_in() === false) {
+	    header("Location: protected.php");
+	    exit();
+	}
+    }
 }
