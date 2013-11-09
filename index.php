@@ -3,6 +3,7 @@
 include "sys/core/init.inc.php";
 include "inc/header.php";
 ?>
+
 <section class="row" id="styled">
     <div class="col col_11">
         <article>
@@ -51,8 +52,7 @@ include "inc/header.php";
         </form>
         <div class="clear" style="height:10px;"></div>
 
-        <?php
-
-        include "inc/articles.php";
-        include "inc/footer.php";
-        ?>
+<?php
+include "inc/articles.php";
+include "inc/footer.php";
+?>
