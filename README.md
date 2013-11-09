@@ -1,4 +1,0 @@
-mailkonto
-=========
-
-My personal webpage
